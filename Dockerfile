@@ -1,8 +1,13 @@
 FROM python:3.12-slim
 WORKDIR /app
 
+RUN apt-get update
+RUN apt-get install -y git
+RUN rm -rf /var/lib/apt/lists/*
+
 # Copy in the source code
-COPY src .
+RUN git clone hhttps://github.com/python2121/F1-Project.git .
+
 RUN pip3 install -r requirements.txt
 
 EXPOSE 8501
