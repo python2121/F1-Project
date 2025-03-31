@@ -1,7 +1,7 @@
 import streamlit as st
 import fastf1
 import datetime
-from helpers import *
+from f1app_lib import *
 
 st.set_page_config(
     page_title="F1 App",

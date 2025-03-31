@@ -1,7 +1,7 @@
 import streamlit as st
 import fastf1
 import datetime
-from helpers import *
+from f1app_lib import *
 import seaborn as sns
 from matplotlib import pyplot as plt
 import fastf1.plotting
